@@ -17,7 +17,7 @@
         <polygon :points="starPointsToString" :fill="getGradId" :stroke="glowColor"
               :filter="'url(#'+this.glowId+')'" v-show="fill > 1" />
 
-        <polygon :points="starPointsToString" :fill="getGradId" :stroke="getBorderColor" :stroke-width="border" :stroke-linejoin="roundedCorners ? 'round' : 'miter'" />
+        <polygon :points="starPointsToString" :fill="getGradId" />
         <polygon :points="starPointsToString" :fill="getGradId" />
     </svg>
 </template>
