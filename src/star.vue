@@ -14,9 +14,7 @@
             </feMerge>
         </filter>
 
-        <polygon :points="starPointsToString" :fill="getGradId" :stroke="glowColor"
-              :filter="'url(#'+this.glowId+')'" v-show="fill > 1" />
-
+        <polygon :points="starPointsToString" :fill="getGradId" :filter="'url(#'+this.glowId+')'" v-show="fill > 1" />
         <polygon :points="starPointsToString" :fill="getGradId" />
         <polygon :points="starPointsToString" :fill="getGradId" />
     </svg>
