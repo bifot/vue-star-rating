@@ -100,14 +100,6 @@ export default {
         border() {
             return (this.roundedCorners && this.borderWidth <= 0) ? 6 : this.borderWidth
         },
-        getBorderColor() {
-            if (this.roundedCorners && this.borderWidth <= 0) {
-                // create a hidden border
-                return (this.fill <= 0) ? this.inactiveColor : this.activeColor
-            }
-
-            return this.borderColor
-        },
         maxSize() {
             return this.starPoints.reduce(function(a, b) {
                 return Math.max(a, b)
